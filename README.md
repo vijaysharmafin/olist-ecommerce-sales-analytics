@@ -34,12 +34,23 @@ Olist processes thousands of orders across Brazil but lacks a unified view of sa
 > 🔗 [View Full Dashboard on Google Drive](https://drive.google.com/file/d/1Gi7f0wqDE6cV7YXObrc5nQsFUnkdBGJo/view?usp=sharing)
 
 **Dashboard Pages:**
-- 🏠 Home — Navigation cover page
+### 🏠 Home — Navigation Page
 ![Home](page1_home.png)
-- 📊 Executive Overview — KPIs, revenue trend, order status
-- 🗺️ Sales & Regional Analysis — Brazil shape map, state rankings, payment types
-- 📦 Product & Category Analysis — Top categories, treemap, avg price
-- 👥 Customer & Delivery Insights — Satisfaction, delivery correlation, installments
+
+### 📊 Executive Overview
+![Executive Overview](page2_executive.png)
+
+### 🗺️ Sales & Regional Analysis
+![Regional Analysis](page3_Regional.png)
+
+### 📦 Product & Category Analysis
+![Category Analysis](page4_category.png)
+
+### 👥 Customer & Delivery Insights
+![Delivery Insights](page5_delivery.png)
+
+### 💡 Key Insights & Recommendations
+![Key Insights](page6_insights.png)
 
 ---
 
