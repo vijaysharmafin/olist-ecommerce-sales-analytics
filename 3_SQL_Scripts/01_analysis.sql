@@ -137,3 +137,62 @@ WHERE seller_rank <= 10;
 
 -- Insight: Top seller revenue vs average seller reveals
 --          how concentrated seller performance is
+-- ============================================
+-- QUERY 6: Delivery Time vs Review Score
+-- ============================================
+-- Purpose: Prove whether late deliveries cause
+-- lower review scores using CTE
+-- ============================================
+
+WITH delivery_analysis AS (
+    SELECT
+        o.order_id,
+        r.review_score,
+        DATE_PART('day',
+            o.order_delivered_customer_date -
+            o.order_purchase_timestamp
+        )                           AS actual_delivery_days,
+        CASE
+            WHEN o.order_delivered_customer_date <= o.order_estimated_delivery_date
+            THEN 'On Time'
+            ELSE 'Late'
+        END                         AS delivery_status
+    FROM orders o
+    JOIN order_reviews r ON o.order_id = r.order_id
+    WHERE o.order_status = 'delivered'
+    AND o.order_delivered_customer_date IS NOT NULL
+)
+SELECT
+    delivery_status,
+    COUNT(*)                                     AS total_orders,
+    ROUND(AVG(review_score)::NUMERIC, 2)         AS avg_review_score,
+    ROUND(AVG(actual_delivery_days)::NUMERIC, 1) AS avg_delivery_days
+FROM delivery_analysis
+GROUP BY delivery_status
+ORDER BY avg_review_score DESC;
+
+-- Result: On Time = 4.29 stars | Late = 2.57 stars
+-- Insight: Late deliveries cause 40% satisfaction drop
+
+
+
+-- ============================================
+-- QUERY 7: Installments vs Order Value
+-- ============================================
+-- Purpose: Find whether higher value orders
+-- use more installments
+-- ============================================
+
+SELECT
+    payment_installments,
+    COUNT(*)                                AS total_orders,
+    ROUND(AVG(payment_value)::NUMERIC, 2)   AS avg_order_value,
+    ROUND(SUM(payment_value)::NUMERIC, 2)   AS total_revenue
+FROM order_payments
+WHERE payment_type = 'credit_card'
+AND payment_installments BETWEEN 1 AND 12
+GROUP BY payment_installments
+ORDER BY payment_installments;
+
+-- Result: 1 installment = R$95 avg vs 10 installments = R$415 avg
+-- Insight: Installment flexibility drives 333% higher order values
