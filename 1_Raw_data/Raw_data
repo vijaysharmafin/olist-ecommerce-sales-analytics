@@ -1,1 +1,11 @@
-[Olist Brazilian E-Commerce Dataset](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce) — Kaggle
+# Raw Data
+
+## Dataset Source
+🔗 [Olist Brazilian E-Commerce Dataset](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce) — Kaggle
+
+## Dataset Info
+- Orders: 99,441
+- Period: September 2016 – August 2018
+- Country: Brazil
+- Currency: Brazilian Reais (R$)
+- Tables: 8 relational tables
