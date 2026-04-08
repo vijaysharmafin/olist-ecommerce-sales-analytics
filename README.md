@@ -35,7 +35,7 @@ Olist processes thousands of orders across Brazil but lacks a unified view of sa
 
 **Dashboard Pages:**
 - 🏠 Home — Navigation cover page
-![Executive Overview](page1_home)
+![Home](page1_home.png)
 - 📊 Executive Overview — KPIs, revenue trend, order status
 - 🗺️ Sales & Regional Analysis — Brazil shape map, state rankings, payment types
 - 📦 Product & Category Analysis — Top categories, treemap, avg price
