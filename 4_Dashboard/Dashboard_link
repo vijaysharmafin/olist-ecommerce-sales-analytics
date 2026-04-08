@@ -1,1 +1,17 @@
+# Power BI Dashboard
+
+## View Interactive Dashboard
+🔗 [Click here to view the full interactive dashboard](https://drive.google.com/file/d/1Gi7f0wqDE6cV7YXObrc5nQsFUnkdBGJo/view?usp=sharing)
+
+## Dashboard Pages
+- 🏠 Home — Navigation cover page
+- 📊 Executive Overview — KPIs, revenue trend, order status breakdown
+- 🗺️ Sales & Regional Analysis — Brazil map, state rankings, payment types
+- 📦 Product & Category Analysis — Top categories, treemap, avg price
+- 👥 Customer & Delivery Insights — Satisfaction scores, delivery correlation
+- 💡 Key Insights & Recommendations — Summary of all findings
+
+## Tools Used
+- Power BI Desktop
+- Data source: PostgreSQL (olist_sales database)
 
