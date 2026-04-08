@@ -35,22 +35,22 @@ Olist processes thousands of orders across Brazil but lacks a unified view of sa
 
 **Dashboard Pages:**
 ### 🏠 Home — Navigation Page
-![Home](page1_home.png)
+![Home](Dashboard_SS/page1_home.png)
 
 ### 📊 Executive Overview
-![Executive Overview](page2_executive.png)
+![Executive Overview](Dashboard_SS/page2_executive.png)
 
 ### 🗺️ Sales & Regional Analysis
-![Regional Analysis](page3_Regional.png)
+![Regional Analysis](Dashboard_SS/page3_Regional.png)
 
 ### 📦 Product & Category Analysis
-![Category Analysis](page4_category.png)
+![Category Analysis](Dashboard_SS/page4_category.png)
 
 ### 👥 Customer & Delivery Insights
-![Delivery Insights](page5_delivery.png)
+![Delivery Insights](Dashboard_SS/page5_delivery.png)
 
 ### 💡 Key Insights & Recommendations
-![Key Insights](page6_insights.png)
+![Key Insights](Dashboard_SS/page6_insights.png)
 
 ---
 
